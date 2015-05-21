@@ -4,23 +4,24 @@
 
     <nav class="site-nav clearfix red bg-transparent">
   <div class="sm-col ">
-    <a href="#" class="button py2 button-transparent">Home</a>
-    <a href="/" class="button py2 button-transparent">Burgers</a>
-    <a href="/" class="button py2 button-transparent">Fries</a>
+    <a href="/" class="button py2 button-transparent asap">Home</a>
+    <a href="/" class="button py2 button-transparent asap">Blog</a>
+    <a href="/" class="button py2 button-transparent asap">Works</a>
   </div>
   <div class="sm-col-right trigger">
-    <a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="button py2 button-transparent"> <i class="fa fa-rss red"></i></a>
+    
   {% for page in site.pages %}
           {% if page.title %}
-    <a href="{{ page.url | prepend: site.baseurl }}" class="page-link button py2 button-transparent">{{ page.title }}</a>
+    <a href="{{ page.url | prepend: site.baseurl }}" class="page-link button py2 button-transparent asap">{{ page.title }}</a>
        {% endif %}
         {% endfor %}
+        <a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="button py2 button-transparent asap"> <i class="fa fa-rss red"></i></a>
   </div>
 </nav>
 
 <div class="site-name">
-<h1>
-<a class="site-title asap teal px2" href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+
+<a class="site-title asap teal px2" href="{{ site.baseurl }}/"><img src="/blog2.png" height="100" class="py2"> </a>
   
 </div>
 

@@ -294,6 +294,51 @@ header, body, footer, .page-content {
   margin: 0 auto;
 }
 
+/* body {
+  background: url(/dot-gray.svg);
+}*/
+
+.social {
+  position: fixed;
+  bottom: 50%;
+  right: 20px;
+  text-align: right;
+  font-size: 13px;
+}
+
+.social li {
+    text-align: center;
+    display: block;
+    margin-bottom: 5px;
+    margin-right: 0;
+}
+
+#top-left, #top-right, #bottom-left {
+    position: fixed;
+
+}
+
+#top-left {
+  top: 25px;
+  left: 20px;
+}
+
+#top-left a:hover {
+  color: #fed331;
+  text-decoration: none;
+}
+
+#top-right {
+  top: 25px;
+  right: 20px;
+}
+
+#bottom-left {
+  bottom: 25px;
+  left: 20px;
+}
+
+
 /* Basscss Defaults */
 
 /*
