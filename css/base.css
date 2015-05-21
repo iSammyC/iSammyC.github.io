@@ -279,9 +279,19 @@ h4, .h4 { font-size: 16px; font-size: 1rem }
 h5, .h5 { font-size: 14px; font-size: .875rem }
 h6, .h6 { font-size: 12px; font-size: .75rem }
 
+.oxygen {font-family: Oxygen}
+.asap {font-family: Asap;}
+
 .list-reset {
   list-style: none;
   padding-left: 0;
+}
+
+
+header, body, footer, .page-content {
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 /* Basscss Defaults */

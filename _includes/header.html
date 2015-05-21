@@ -1,21 +1,27 @@
 <header class="site-header">
 
-  
+    
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-    <nav class="site-nav clearfix white bg-black">
+    <nav class="site-nav clearfix red bg-transparent">
   <div class="sm-col ">
     <a href="#" class="button py2 button-transparent">Home</a>
     <a href="/" class="button py2 button-transparent">Burgers</a>
     <a href="/" class="button py2 button-transparent">Fries</a>
   </div>
   <div class="sm-col-right trigger">
+    <a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="button py2 button-transparent"> <i class="fa fa-rss red"></i></a>
   {% for page in site.pages %}
           {% if page.title %}
     <a href="{{ page.url | prepend: site.baseurl }}" class="page-link button py2 button-transparent">{{ page.title }}</a>
+       {% endif %}
+        {% endfor %}
   </div>
 </nav>
+
+<div class="site-name">
+<h1>
+<a class="site-title asap teal px2" href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
   
+</div>
 
 </header>
