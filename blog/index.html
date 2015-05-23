@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+<div class="blog">
+
+
+  
+<section class="container px2 py3">
+<div class="clearfix mx-auto">
+  <ul class="post-list list-reset py4 px2">
+    {% for post in site.posts %}
+      <li>
+        <div class="sm-col sm-col-8 md-col-9 px2">
+      <div>
+        
+        <h2 class="h2">
+          <a href="{{ post.url | prepend: site.baseurl }}" class="instapaper-dark-hl t700 oxygen py2">
+            {{ post.title }}
+          </a>
+        </h2>
+        <span class="post-meta instapaper-dark-sub py1 ">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <div class="instapaper-dark-p t300 py2 text-lg">
+        {{ post.excerpt }}
+        </div>
+        <a href="{{ post.url | prepend: site.baseurl }}" class=" button-narrow button-outline mb1 instapaper-dark-hl right" right firam t200">Read more</a>
+      </div>
+      </div>
+
+        
+      </li>
+    {% endfor %}
+  </ul>
+
+  
+    
+    <div class="sm-col sm-col-4 md-col-3 px3 sm-show right-align">
+      <h3 class="h3">Categories</h3>
+      <ul class="list-reset ">
+        <li><a href="#" class="red">Bacon</a></li>
+        <li><a href="#" class="red">Bratwurst</a></li>
+        <li><a href="#" class="red">Andouille</a></li>
+        <li><a href="#" class="red">Pork Loin</a></li>
+        <li><a href="#" class="red">Corned Beef</a></li>
+        <li><a href="#" class="red">Pastrami</a></li>
+      </ul>
+
+      <div class="rss">
+<a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="py2 asap button-outline button-small"> <i class="fa fa-rss"></i> Subscribe </a></li>
+</div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+</div>

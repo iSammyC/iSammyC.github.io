@@ -1,15 +1,17 @@
 ---
 layout: default
 ---
-<div class="post">
-
+<div class="post ">
+<div class="article-container p1 mt-4">
   <header class="post-header">
-    <h1 class="post-title p2 bg-navy red asap">{{ page.title }}</h1>
-    <p class="post-meta p2 bg-navy silver">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    <h1 class="post-title p2 instapaper-dark-hl asap center">{{ page.title }}</h1>
+    <p class="post-meta p2 instapaper-dark-sub center">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+<div class="addthis_sharing_toolbox"></div>
   </header>
 
-  <article class="post-content px4">
+  <article class="post-content px2 fira t300 text-lg">
     {{ content }}
   </article>
 
+</div>
 </div>
