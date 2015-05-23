@@ -398,13 +398,7 @@ header, body, .page-content {
   width: 100%;
 }
 
-footer {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  margin-left: -110px;
-  margin-bottom: 90px;
-}
+
 
 /* body {
   background: url(/dot-gray.svg);
