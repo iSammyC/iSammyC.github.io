@@ -1,7 +1,10 @@
 ---
-layout: default
+layout: project
 ---
-<div class="post ">
+
+{% include blog-body.html %}
+
+<div class="post mb4">
 <div class="article-container p1 mt-4">
   <header class="post-header">
   	<span class="post-meta px2 instapaper-dark-sub inline-block">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %} </span>
@@ -10,9 +13,11 @@ layout: default
 <div class="addthis_sharing_toolbox"></div>
   </header>
 
-  <article class="post-content px2 fira t300 text-lg">
+  <article class="post-content px2 fira t300 text-lg instapaper-dark-p">
     {{ content }}
   </article>
 
 </div>
 </div>
+
+{% include footer.html %}
