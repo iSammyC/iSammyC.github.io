@@ -26,7 +26,7 @@ layout: project
         <div class="instapaper-dark-p t300 py2 text-lg">
         {{ post.excerpt }}
         </div>
-        <a href="{{ post.url | prepend: site.baseurl }}" class=" button-narrow button-outline mb1 instapaper-dark-hl right" right firam t200">Read more</a>
+        <a href="{{ post.url | prepend: site.baseurl }}" class=" button-narrow button-outline mb1 instapaper-dark-hl right t200">Read more</a>
       </div>
       </div>
 
@@ -47,6 +47,7 @@ layout: project
         <li><a href="#" class="red">Corned Beef</a></li>
         <li><a href="#" class="red">Pastrami</a></li>
       </ul>
+      </div>
 
       <div class="rss">
 <a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="py2 asap button-outline button-small"> <i class="fa fa-rss"></i> Subscribe </a></li>
@@ -57,8 +58,7 @@ layout: project
 </section>
 
 
-
-
-
-
 </div>
+
+
+{% include footer.html %}
