@@ -1,0 +1,23 @@
+
+---
+layout: default
+---
+<div class="home">
+
+  
+
+  <ul class="post-list list-reset py4 px2">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta red bg-navy p1">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link teal bg-navy p2 asap" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  
+
+</div>
