@@ -406,6 +406,14 @@ a:hover {
   background: #3D3D3D;
 }
 
+.hvr-clear a:hover {
+  color: inherit;
+  background: transparent;
+  text-decoration: none;
+  font-weight: inherit;
+  text-transform: none;
+}
+
 
 .hvr-u a:hover {
   text-decoration: underline;
