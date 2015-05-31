@@ -10,12 +10,12 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 	
-  <link rel="stylesheet" href="http://static.tumblr.com/d91va7q/t2Onp3s2a/jquery.fullpage.css"> 
+  <link rel="stylesheet" href="{{ "/jquery.fullpage.css" | prepend: site.baseurl }}"> 
 
   
 
 	<link href="/img/favicon.ico" rel="icon">
-
+<link href="http://cdn.bootcss.com/magnific-popup.js/1.0.0/magnific-popup.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic|Oxygen:400,300,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="http://code.cdn.mozilla.net/fonts/fira.css">
@@ -28,7 +28,7 @@
   <script src="http://cdn.bootcss.com/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
   <script type="text/javascript" src="http://static.tumblr.com/d91va7q/6KZnnxdwk/jquery.fullpage.js"></script>
   <script type="text/javascript" src="http://static.tumblr.com/d91va7q/lgGnorodl/fitter-happier-text.js"></script>
-  
+  <script src="http://cdn.bootcss.com/magnific-popup.js/1.0.0/jquery.magnific-popup.js"></script>
   <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
     <script type="text/javascript">
@@ -45,7 +45,26 @@
 
     </script>
 
+    <style type="text/css">
+      
+      .mfp-close-btn-in .mfp-close {
+         color: inherit;
+      }
 
+
+      .mfp-bg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1042;
+  overflow: hidden;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.85);
+  opacity: 0.8;
+
+
+    </style>
 
 
 </head>

@@ -16,22 +16,46 @@
 }
 
 #section1 #slide1 .content-r{
-  background-image: url(http://is.gd/chJiPV);
+  background-image: url(http://is.gd/KYsKF2);
   background-size: cover;
   background-position: center center;
 }
 
 #section2 #slide1 .content {
-  background-image: url(http://7xixe7.com1.z0.glb.clouddn.com/15-5-26/34297709.jpg);
+  background-image: url(http://is.gd/OwPLkn);
   background-size: cover;
   background-position: bottom center;
   
 }
 
+#section2 #slide2 {
+  background-image: url(http://is.gd/kLmyr5);
+  background-size: cover;
+  background-position: center;
+}
+
+#section2 #slide3 {
+  background-image: url(http://is.gd/f5NK9V);
+  background-size: cover;
+  background-position: center;
+}
+
+#website {
+
+}
+
+#section2 #slide4 {
+  background-image: url(http://7xixe7.com1.z0.glb.clouddn.com/15-5-31/44192259.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
 
 .content-r {
   min-height: 100vh;
-  background: #F4F4F4;
   float: right;
 }
 
@@ -199,6 +223,155 @@ text-shadow: 0px -1px 0px #858585;
 }
 
 
+/* Styles for dialog window */
+.popup-dic {
+  position: relative;
+  background: #3C3C3C;
+  color: #A0A0A0;
+  padding: 20px;
+  width:auto;
+  max-width: 400px;
+  margin: 20px auto;
+  font-family: Asap;
+}
+
+.popup-dic h1 {
+  font-size: 2.2em;
+  color: #D0D0D0 ;
+  font-weight: 500;
+  display: inline-block;
+  margin-right: 2em;
+}
+
+.popup-dic span {
+  color: #7A7A7A;
+  font-weight: 200;
+  font-size: 12px;
+}
+
+.popup-dic aside {
+  margin-bottom: 5px;
+  font-style: italic;
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #7A7A7A;
+}
+
+.popup-dic p {
+  font-weight: 300;
+  font-size: 1em;
+  color: #A0A0A0;
+}
+
+
+
+#keywords {
+  font-family: Asap;
+  font-weight: bold;
+}
+
+#keywords a {
+  color: #3D3D3D;
+  font-size: 2.5em;
+}
+
+#keywords a:hover {
+  color: #F4F4F4;
+  background: #3D3D3D;
+}
+
+
+#keywords li {
+  display: inline-block;
+}
+
+#keywords li::before {
+  content:"#⁽";
+  color: #DF574B;
+  font-size: 2em;
+}
+
+#keywords li::after {
+  content: "₎⁺";
+  color: #DF574B;
+  font-size: 2em;
+}
+
+#keywords li input {
+  font-size: 2.5em;
+  font-weight: bold;
+  font-family: Asap;
+  color: #3D3D3D;
+  padding: 0;
+  border: 0;
+  border-bottom: 2px solid #3D3D3D;
+  background-color: transparent;
+  width: 170px;
+  text-transform: capitalize;
+}
+
+
+/**
+ * Fade-zoom animation for first dialog
+ */
+
+/* start state */
+.my-mfp-zoom-in .zoom-anim-dialog {
+  opacity: 0;
+
+  -webkit-transition: all 0.2s ease-in-out; 
+  -moz-transition: all 0.2s ease-in-out; 
+  -o-transition: all 0.2s ease-in-out; 
+  transition: all 0.2s ease-in-out; 
+
+
+
+  -webkit-transform: scale(0.8); 
+  -moz-transform: scale(0.8); 
+  -ms-transform: scale(0.8); 
+  -o-transform: scale(0.8); 
+  transform: scale(0.8); 
+}
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
+  opacity: 1;
+
+  -webkit-transform: scale(1); 
+  -moz-transform: scale(1); 
+  -ms-transform: scale(1); 
+  -o-transform: scale(1); 
+  transform: scale(1); 
+}
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
+  -webkit-transform: scale(0.8); 
+  -moz-transform: scale(0.8); 
+  -ms-transform: scale(0.8); 
+  -o-transform: scale(0.8); 
+  transform: scale(0.8); 
+
+  opacity: 0;
+}
+
+/* Dark overlay, start state */
+.my-mfp-zoom-in.mfp-bg {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out; 
+  -moz-transition: opacity 0.3s ease-out; 
+  -o-transition: opacity 0.3s ease-out; 
+  transition: opacity 0.3s ease-out;
+}
+/* animate in */
+.my-mfp-zoom-in.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+/* animate out */
+.my-mfp-zoom-in.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
 
 
 
@@ -215,13 +388,22 @@ button, input, select, textarea {
   font-size: 100%;
 }
 
-body {
-  color:  ;
+
+
+p {
+  font-weight: 300;
 }
 
+
+
 a {
-  color: #0074d9;
+  color: #39cccc;
   text-decoration: none;
+}
+
+a:hover {
+  color: #D0D0D0;
+  background: #3D3D3D;
 }
 
 
@@ -416,7 +598,7 @@ button,
   padding: .5rem 1rem;
   margin: 0;
   height: auto;
-  border: 1px solid transparent;
+  border: 1px solid trana:hoversparent;
   vertical-align: middle;
   -webkit-appearance: none;
 }
@@ -520,18 +702,19 @@ body {
   min-height: 100%;
   font-family: 'Fira Sans', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 100%;
-  background: #F4F4F4;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Fira Sans', 'Helvetica Neue', Helvetica, sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 1.25;
   margin-top: 1em;
   margin-bottom: .5em;
+  color: #ff851b;
 }
 
 p, dl, ol, ul {
+  font-weight: 300;
   font-size: 12px;
   font-size: 1rem;
   margin-top: 0;
@@ -770,7 +953,7 @@ header, body, .page-content {
 .full-width { width: 100% }
 /* Basscss Utility Typography */
 
-.bold    { font-weight: bold; font-weight: bold }
+.bold    { font-weight: bold; font-weight: 500 }
 .regular { font-weight: normal }
 .italic  { font-style: italic }
 .caps    { text-transform: uppercase; letter-spacing: .2em; }
