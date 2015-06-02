@@ -19,24 +19,23 @@
   <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-ipad-retina.png" />
 <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-iphone-retina.png" />
 <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-ipad.png" />
-<link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-iphone.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-iphone.png"/>
 
 
 
 
 
-<link href="http://cdn.bootcss.com/magnific-popup.js/1.0.0/magnific-popup.css" rel="stylesheet">
-	<link href='http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic|Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.useso.com/css?family=Asap:400,700,400italic,700italic|Oxygen:400,300,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="http://code.cdn.mozilla.net/fonts/fira.css">
 
 	<link href="http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
  
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+  <script src="http://ajax.useso.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://ajax.useso.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
   <script src="http://cdn.bootcss.com/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
-  <script type="text/javascript" src="http://static.tumblr.com/d91va7q/6KZnnxdwk/jquery.fullpage.js"></script>
+  <script src="http://cdn.bootcss.com/fullPage.js/2.6.5/jquery.fullPage.js"></script>
   <script type="text/javascript" src="http://static.tumblr.com/d91va7q/lgGnorodl/fitter-happier-text.js"></script>
   
   <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
@@ -57,24 +56,51 @@
 
     <style type="text/css">
       
-      .mfp-close-btn-in .mfp-close {
-         color: inherit;
-      }
-
-
-      .mfp-bg {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1042;
-  overflow: hidden;
-  position: fixed;
-  background: rgba(0, 0, 0, 0.85);
-  opacity: 0.8;
 
 
     </style>
+<script src="http://d2v52k3cl9vedd.cloudfront.net/geomicons/0.2.0/geomicons.min.js"></script>
 
+<script>
+
+  var icons = document.querySelectorAll('[data-icon]');
+  Geomicons.inject(icons);
+
+  var Disclosure = function(el, options) {
+    el.isActive = false;
+    el.details = el.querySelectorAll('[data-details]');
+    el.hide = function() {
+      for (var i = 0; i < el.details.length; i++) {
+        el.details[i].style.display = 'none';
+      }
+    };
+    el.show = function() {
+      for (var i = 0; i < el.details.length; i++) {
+        el.details[i].style.display = 'block';
+      }
+    };
+    el.toggle = function(e) {
+      e.stopPropagation();
+      el.isActive = !el.isActive;
+      if (el.isActive) {
+        el.show();
+      } else {
+        el.hide();
+      }
+    }
+    el.addEventListener('click', function(e) {
+      el.toggle(e);
+    });
+    el.hide();
+    return el;
+  };
+
+  var disclosures = document.querySelectorAll('[data-disclosure]');
+
+  for (var i = 0; i < disclosures.length; i++) {
+    disclosures[i] = new Disclosure(disclosures[i]);
+  }
+
+</script>
 
 </head>
