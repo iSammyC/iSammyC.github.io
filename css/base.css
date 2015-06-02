@@ -10,13 +10,13 @@
 
 /* LEFT BACKGROUND */
 #section0 .content{
-  background-image: url(http://is.gd/ArJEzn);
+  background-image: url(http://is.gd/4MDLfl);
   background-size: cover;
-  background-position: center;
+  background-position: left center;
 }
 
 #section1 #slide1 .content-r{
-  background-image: url(http://is.gd/pVhFPF);
+  background-image: url(http://is.gd/KYsKF2);
   background-size: cover;
   background-position: center center;
 }
@@ -166,18 +166,6 @@
 }
 
 
-header .sub-menu {
-  list-style: none;
-  text-align: right;
-  position: absolute;
-  top: 20px;
-  right: 5px;
-  display: none;
-}
-
-
-
-
 .sub-menu {
   list-style: none;
   text-align: right;
@@ -186,7 +174,6 @@ header .sub-menu {
   right: 65px;
   display: none;
 }
-
 
 
 .menu li:hover .sub-menu {
@@ -896,7 +883,7 @@ html {
 
 body {
   background-color: #F8F2E3;
-  color: #3D3D3D;
+  color: black;
   min-height: 100%;
   font-family: 'Fira Sans', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 100%;
@@ -908,7 +895,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.25;
   margin-top: 1em;
   margin-bottom: .5em;
-  color: #DF574B;
+  color: #ff851b;
 }
 
 p, dl, ol, ul {
