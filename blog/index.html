@@ -1,61 +1,56 @@
 ---
-layout: project
+layout: default
 ---
-
-{% include blog-body.html %}
-
 
 <div class="blog">
 
 
   
-<section class="container px2 py3">
-<div class="clearfix mx-auto">
-  <ul class="post-list list-reset py4 px2">
-    {% for post in site.posts %}
-      <li>
-        <div class="sm-col sm-col-8 md-col-9 px2">
-      <div>
-        
-        <h2 class="h2">
-          <a href="{{ post.url | prepend: site.baseurl }}" class="instapaper-dark-hl t700 oxygen py2">
-            {{ post.title }}
-          </a>
-        </h2>
-        <span class="post-meta instapaper-dark-sub py1 ">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <div class="instapaper-dark-p t300 py2 text-lg">
-        {{ post.excerpt }}
-        </div>
-        <a href="{{ post.url | prepend: site.baseurl }}" class=" button-narrow button-outline mb1 instapaper-dark-hl right t200">Read more</a>
-      </div>
-      </div>
+<section class="container p4" style="max-width:650px;">
 
-        
+  
+              
+          <ul class="post-list list-reset ">
+            {% for post in site.posts %}
+        <li class="py3">
+         <div>
+          <h2 class="h2">
+            <a href="{{ post.url | prepend: site.baseurl }}" class="">
+            {{ post.title }}
+             </a>
+          </h2>
+          <span id="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <div class="py3">
+          {{ post.excerpt }}
+          </div>
+          <a href="{{ post.url | prepend: site.baseurl }}" class=" button-narrow button-outline mb1 right">Read more</a>
+         </div> 
       </li>
     {% endfor %}
   </ul>
-
+      
+      
   
-    
-    <div class="sm-col sm-col-4 md-col-3 px3 sm-show right-align">
+    <!--
+    <div class="sm-col sm-col-4 md-col-3 sm-show right-align px2 py3">
       <h3 class="h3">Categories</h3>
       <ul class="list-reset ">
-        <li><a href="#" class="red">Bacon</a></li>
-        <li><a href="#" class="red">Bratwurst</a></li>
-        <li><a href="#" class="red">Andouille</a></li>
-        <li><a href="#" class="red">Pork Loin</a></li>
-        <li><a href="#" class="red">Corned Beef</a></li>
-        <li><a href="#" class="red">Pastrami</a></li>
+        <li><a href="#">Bacon</a></li>
+        <li><a href="#">Bratwurst</a></li>
+        <li><a href="#">Andouille</a></li>
+        <li><a href="#">Pork Loin</a></li>
+        <li><a href="#">Corned Beef</a></li>
+        <li><a href="#">Pastrami</a></li>
       </ul>
-      </div>
+      </div> -->
+     
+
+</section>
+
 
       <div class="rss">
 <a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="py2 asap button-outline button-small"> <i class="fa fa-rss"></i> Subscribe </a></li>
 </div>
-    </div>
-
-  </div>
-</section>
 
 
 </div>

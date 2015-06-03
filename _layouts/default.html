@@ -4,18 +4,51 @@
 
  {% include head-normal.html %}
 
-  <body class="bg-instapaper-dark flex flex-column" style="min-height:100vh" >
+  <body class="flex flex-column" style="min-height:100vh" >
 
     {% include header.html %}
 
-    <div class="page-content instapaper-dark-p flex-auto">
-      <div class="wrapper">
+    <div class="page-content flex-auto">
+      
         {{ content }}
-      </div>
+      
     </div>
 
     {% include footer.html %}
-    {% include social.html %}
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+
+      <script>
+      var hour = moment().hour();
+      var skull = document.querySelector('.js-skull');
+      var dark = false;
+      document.body.style.transition = 'background .2s ease-out';
+      function toggleTheme() {
+        if (dark) {
+          document.body.classList.add('bg-darkmood', 'darkmood-p');
+        } else {
+          document.body.classList.remove('bg-darkmood', 'darkmood-p');
+        }
+      }
+      if (hour > 20 || hour < 6) {
+        dark = true;
+        toggleTheme();
+      }
+      skull.addEventListener('click', function() {
+        dark = !dark;
+        toggleTheme();
+      });
+      </script>
+
+          <script>
+    $('#openSubMenu').click(function(e) {
+    $('.sub-menu').addClass("block");
+    e.preventDefault();
+});
+</script>
+
+
   </body>
 
 </html>

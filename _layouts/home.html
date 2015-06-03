@@ -5,17 +5,12 @@
 
 <body>
 
-
-<div class="top-bar bg-orange"></div>
-
-
-<div id="top-left">
- 
-	<a href="/" class="t600 teal px2" id="">Sammy Cheung</a>
+<div id="top-left"> 
+	<a id="moveTo" href="/" class="t600 px2" style="color:currentColor;">Sammy Cheung</a>
   <br>
-  <div class="hvr-clear js-skull p2 hint--bottom" data-hint="Click to toggle Light/Dark mood" style="cursor:pointer;">
-  
-    <svg class="" width="40px" height="40px" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+  <div class="p2">
+  <a id="moveTo" href="/" style="color:currentColor;">
+    <svg  width="40px" height="40px" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
         <g id="180---iPhone-6-Plus" sketch:type="MSArtboardGroup" transform="translate(-15.000000, -15.000000)" fill="currentColor">
@@ -23,9 +18,7 @@
         </g>
     </g>
 </svg>
-
-
-   </div>
+</a></div>
 
     
 
@@ -33,24 +26,25 @@
 
 </div>
 
-<div id="top-right">
+
 
 	<nav>
-	<ul class="menu list-reset right-align t400 px2">
-		<li class="mb1 hvr-bg"><a href="/#about" class="teal">About</a></li>
-		<li class="mb1 hvr-bg"><a href="/#projects" class="teal">Projects</a>
+	<ul class="menu list-reset right-align t400">
+		<li class="inline-block"><a href="/#about"><i class="material-icons md-18">info</i></a></li>
+		<li id="openSubMenu" class="inline-block"><a href="#"><i class="material-icons md-18">work</i></a>
 			<ul class="sub-menu">
-				<li class="px1 mb1"><a href="/#projects/1" class="teal">Design</a></li>
-				<li class="bg-dark px1 mb1"><a href="/#projects/2" class="teal">Websites</a></li>
-				<li class="px1"><a href="/#projects/3" class="teal">Special</a></li>
+				<li class="px1 mb1"><a href="/#projects/1"><i class="material-icons md-18">colorize</i></a></li>
+				<li class="px1 mb1"><a href="/#projects/2"><i class="material-icons md-18">code</i></a></li>
+				<li class="px1"><a href="/#projects/3" ><i class="material-icons md-18">star</i></a></li>
 			</ul>
 		</li>
-		<li class="mb1 hvr-bg"><a href="/#connect" class="teal ">Connect</a></li>
-		<li class="mb1 hvr-bg"><a href="/blog" class="teal">Blog</a></li>
+		<li class="inline-block"><a href="/#connect"><i class="material-icons md-18">contacts</i></a></li>
+		<li class="inline-block"><a href="/blog" class="hint--bottom" data-hint="Blog"><i class="material-icons md-18">create</i></a></li>
 
 	</ul>
 	</nav>	
 
+<div id="bottom-right" class="js-skull" style="cursor:pointer;"><i class="material-icons md-18">brightness_4</i>
 </div>
 
 
@@ -64,6 +58,8 @@
 
 
 </div>
+
+
 
 <script>
     var nodes = document.querySelectorAll('[data-fitter-happier-text]');
@@ -255,7 +251,7 @@ requestAnimationFrame(update);;
     };
     $(document).ready(function () {
         window.signature.initialize();
-        return $('button').on('click', function () {
+        return $('.signature').on('click', function () {
             window.signature.initialize();
             return setTimeout(function () {
                 return window.signature.animate();
@@ -268,6 +264,13 @@ requestAnimationFrame(update);;
 }.call(this));
     </script> 
     
+    <script>
+    $('#openSubMenu').click(function(e) {
+    $('.sub-menu').addClass("block");
+    e.preventDefault();
+});
+</script>
+
   <!--  <script type="text/javascript">
     $(function() {                       //run when the DOM is ready
   $(".close").click(function() {  //use a class, since your ID gets mangled
@@ -299,12 +302,12 @@ $('.open-popup-link').magnificPopup({
   document.body.style.transition = 'background .2s ease-out';
   function toggleTheme() {
     if (dark) {
-      document.body.classList.add('bg-instapaper-dark', 'instapaper-dark-p');
+      document.body.classList.add('bg-darkmood', 'darkmood-p');
     } else {
-      document.body.classList.remove('bg-instapaper-dark', 'instapaper-dark-p');
+      document.body.classList.remove('bg-darkmood', 'darkmood-p');
     }
   }
-  if (hour > 20 || hour < 6) {
+  if (hour > 18 || hour < 7) {
     dark = true;
     toggleTheme();
   }

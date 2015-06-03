@@ -1,25 +1,20 @@
 ---
-layout: project
+layout: default
 ---
 
+<div class="py4 mb4">
+<div class="article-container px1">
+  <div id="single-post-header" class="flex flex-baseline mb3" style="border-bottom: 1px dotted #ff851b">
+  	<div class="flex-auto px1">
+    <h1 class="post-title">{{ page.title }}</h1>
+    </div>
+    <div class="px1">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %} </div>
+  </div>
 
-{% include blog-body.html %}
-
-
-<div class="post mb4">
-<div class="article-container p1 mt-4">
-  <header class="post-header">
-  	<span class="post-meta px2 instapaper-dark-sub inline-block">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %} </span>
-    <h1 class="post-title px2 instapaper-dark-hl asap mt1 mb4">{{ page.title }}</h1>
-    
-<div class="addthis_sharing_toolbox"></div>
-  </header>
-
-  <article class="post-content px2 fira t300 text-lg instapaper-dark-p">
+  <div id="single-post-content" class="">
     {{ content }}
-  </article>
+  </div>
 
 </div>
 </div>
 
-{% include footer.html %}

@@ -11,7 +11,8 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 	
- 
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   <link rel="stylesheet" href="http://static.tumblr.com/d91va7q/t4pnp7seq/jquery.fullpage.css"> 
   
 
@@ -41,21 +42,192 @@
   
   <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
+
     <script type="text/javascript">
-    $(document).ready(function() {
-      $('#fullpage').fullpage({
-        anchors: ['home', 'about', 'projects', 'connect', 'thank'],
-        menu: '#menu',
-        navigation: true,
-        responsive: 400,
-        scrollingSpeed: 800
+   $(document).ready(function() {
+
+      function initialization(){
+        $('#fullpage').fullpage({
+                  anchors: ['home', 'about', 'projects', 'connect', 'thank'],
+                  resize: false,
+                  animateAnchor:false,
+          scrollOverflow: true,
+          autoScrolling:true,
+          responsive: 400,
+          fitSection: false,
+          menu: '#menu',
+          navigation:false,
+          continuousVertical:false,
+                  css3: true,
+          onLeave: function(index, nextIndex, direction){
+            console.log("onLeave--" + "index: " + index + " nextIndex: " + nextIndex + " direction: " +  direction);
+          },
+              afterLoad: function(anchorLink, index){
+            console.log("afterLoad--" + "anchorLink: " + anchorLink + " index: " + index );
+              },
+          afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
+            console.log("afterSlideLoad--" + "anchorLink: " + anchorLink + " index: " + index + " slideAnchor: " + slideAnchor + " slideIndex: " + slideIndex);
+          },
+              onSlideLeave: function(anchorLink, index, slideIndex, direction){
+            console.log("onSlideLeave--" + "anchorLink: " + anchorLink + " index: " + index + " slideIndex: " + slideIndex + " direction: " + direction);
+              },
+              afterRender: function(){
+            console.log("afterRender");
+              },
+              afterResize: function(){
+            console.log("afterResize");
+              }
+              });
+      }
+
+      //fullPage.js initialization
+            initialization();
+
+
+      $('#moveSectionUp').click(function(e){
+        e.preventDefault();
+        $.fn.fullpage.moveSectionUp();
       });
 
-    });
+      $('#moveSectionDown').click(function(e){
+        e.preventDefault();
+        $.fn.fullpage.moveSectionDown();
+      });
 
+      $('#moveTo').click(function(e){
+        e.preventDefault();
+        $.fn.fullpage.moveTo(1);
+      });
+
+      $('#moveSlideRight').click(function(e){
+        e.preventDefault();
+        $.fn.fullpage.moveSlideRight();
+      });
+
+      $('#moveSlideLeft').click(function(e){
+        e.preventDefault();
+        $.fn.fullpage.moveSlideLeft();
+      });
+
+      $('#setAutoScrollingFalse').click(function(e){
+        e.preventDefault();
+        $.fn.fullpage.setAutoScrolling(false);
+      });
+
+      $('#setAutoScrollingTrue').click(function(e){
+        e.preventDefault();
+        $.fn.fullpage.setAutoScrolling(true);
+      });
+
+      $('#setAllowScrollingFalse').click(function(e){
+        e.preventDefault();
+        $.fn.fullpage.setAllowScrolling(false);
+      });
+
+      $('#setAllowScrollingTrue').click(function(e){
+        e.preventDefault();
+        $.fn.fullpage.setAllowScrolling(true);
+      });
+
+      $('#setKeyboardScrollingFalse').click(function(e){
+        e.preventDefault();
+        $.fn.fullpage.setKeyboardScrolling(false);
+      });
+
+      $('#setKeyboardScrollingTrue').click(function(e){
+        e.preventDefault();
+        $.fn.fullpage.setKeyboardScrolling(true);
+      });
+
+      $('#setScrollingSpeed1500').click(function(e){
+        e.preventDefault();
+        $.fn.fullpage.setScrollingSpeed(2500);
+      });
+
+      $('#setScrollingSpeed700').click(function(e){
+        e.preventDefault();
+        $.fn.fullpage.setScrollingSpeed(700);
+      });
+
+      $('#destroy').click(function(e){
+        e.preventDefault();
+        $.fn.fullpage.destroy('all');
+      });
+
+      $('#undestroy').click(function(e){
+        e.preventDefault();
+
+        //fullPage.js initialization
+        initialization();
+      });
+
+      $('#reBuild').click(function(e){
+        e.preventDefault();
+        $.fn.fullpage.reBuild();
+      });
+
+      $('#setFitToSectionTrue').click(function(e){
+        e.preventDefault();
+        $.fn.fullpage.setFitToSection(true);
+      });
+
+      $('#setFitToSectionFalse').click(function(e){
+        e.preventDefault();
+        $.fn.fullpage.setFitToSection(false);
+      });
+
+      $('#setRecordHistoryTrue').click(function(e){
+        e.preventDefault();
+        $.fn.fullpage.setRecordHistory(true);
+      });
+
+      $('#setRecordHistoryFalse').click(function(e){
+        e.preventDefault();
+        $.fn.fullpage.setRecordHistory(false);
+      });
+
+        });
     </script>
 
+
+
     <style type="text/css">
+
+
+
+
+
+    .fp-controlArrow {
+  -webkit-transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out;
+  background-color: transparent;
+  background-image: url(http://is.gd/1Ao8Q9);
+  background-image: none,url(http://is.gd/1Ao8Q9);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  border: 0;
+  cursor: pointer;
+  opacity: .5;
+  filter: alpha(opacity=50);
+  -ms-filter: alpha(opacity=50);
+  height: 23px;
+  position: absolute;
+  bottom: 50vh;
+  width: 23px;
+  z-index: 90;
+}
+
+    div.fp-controlArrow.fp-prev {
+
+    }
+
+
+    div.fp-controlArrow.fp-next {
+
+    }
       
       .mfp-close-btn-in .mfp-close {
          color: inherit;
