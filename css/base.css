@@ -416,6 +416,7 @@ text-shadow: 0px -1px 0px #858585;
   max-width: 400px;
   margin: 20px auto;
   font-family: Asap;
+  border-radius: 5px;
 }
 
 .popup-dic h1 {
