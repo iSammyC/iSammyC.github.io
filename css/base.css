@@ -24,10 +24,16 @@
 
 
 
-#section1 #slide1 .content-r{
+#section1 #slide1 .content-c {
+  background-image: url(http://7xixe7.com1.z0.glb.clouddn.com/15-5-7/17172854.jpg);
+  background-size: cover;
+  background-position: center left;
+}
+
+#section1 #slide2 .content {
   background-image: url(http://is.gd/ArJEzn);
   background-size: cover;
-  background-position: center center;
+  background-position: center right;
 }
 
 #section2 #slide1 .content {
@@ -216,6 +222,13 @@ img.logo-b {
 .cr {
   height: 90vh;
   max-width: 500px;
+}
+
+.cr2 {
+  height: 80vh;
+  width: 80vw;
+  border-radius: 2px;
+  
 }
 
 .cl {
@@ -2776,7 +2789,27 @@ nav ul li.active a {
 
 
 
-
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
 
 
 
