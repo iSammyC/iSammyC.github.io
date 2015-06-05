@@ -6,7 +6,7 @@
 <body>
 
 <div id="top-left"> 
-	<a id="moveTo" href="/" class="t600 px2" style="color:currentColor;">Sammy Cheung</a>
+	<a id="moveTo" href="/" class="t600 px2 cc" alt="sammy.tk">Sammy Cheung</a>
   <br>
   <div class="p2">
   <a id="moveTo" href="/" style="color:currentColor;">
@@ -29,22 +29,22 @@
 
 
 	<nav>
-	<ul class="menu list-reset right-align t400">
-		<li class="inline-block"><a href="/#about"><i class="material-icons md-18">info</i></a></li>
-		<li id="openSubMenu" class="inline-block"><a href="#"><i class="material-icons md-18">work</i></a>
+	<ul class="menu list-reset right-align t400 cc">
+		<li class="inline-block"><a href="/#about" title="about me"><i class="material-icons md-18">info</i></a></li>
+		<li id="openSubMenu" class="inline-block"><a href="#" title="works"><i class="material-icons md-18">work</i></a>
 			<ul class="sub-menu">
-				<li class="px1 mb1"><a href="/#projects/1"><i class="material-icons md-18">colorize</i></a></li>
-				<li class="px1 mb1"><a href="/#projects/2"><i class="material-icons md-18">code</i></a></li>
-				<li class="px1"><a href="/#projects/3" ><i class="material-icons md-18">star</i></a></li>
+				<li class="px1 mb1"><a href="/#projects/1" title="design"><i class="material-icons md-18">colorize</i></a></li>
+				<li class="px1 mb1"><a href="/#projects/2" title="websites"><i class="material-icons md-18">code</i></a></li>
+				<li class="px1"><a href="/#projects/3" title="personal"><i class="material-icons md-18">star</i></a></li>
 			</ul>
 		</li>
-		<li class="inline-block"><a href="/#connect"><i class="material-icons md-18">contacts</i></a></li>
-		<li class="inline-block"><a href="/blog" class="hint--bottom" data-hint="Blog"><i class="material-icons md-18">create</i></a></li>
+		<li class="inline-block"><a href="/#connect" title="contact"><i class="material-icons md-18">contacts</i></a></li>
+		<li class="inline-block"><a href="/blog" title="blog"><i class="material-icons md-18">create</i></a></li>
 
 	</ul>
 	</nav>	
 
-<div id="bottom-right" class="js-skull" style="cursor:pointer;"><i class="material-icons md-18">brightness_4</i>
+<div id="bottom-right" class="js-skull" style="cursor:pointer;"><i class="material-icons md-18" title="Click to toggle Dark/Light mood">brightness_4</i>
 </div>
 
 
@@ -321,9 +321,9 @@ $('.open-popup-link').magnificPopup({
         
       <script>
         var inputReady = true;
-var input = $('.oneword-input');
+var input = $('.terminal-input');
 input.focus();
-$('.container').on('click', function(e){
+$('.t-container').on('click', function(e){
   input.focus();
 });
 
@@ -332,13 +332,15 @@ input.on('keyup', function(e){
   // console.log(inputReady);
 });
 
-$('.four-oh-four-form').on('submit', function(e){
+$('.t-form').on('submit', function(e){
   e.preventDefault();
-  var val = $(this).children($('.oneword-input')).val().toLowerCase();
+  var val = $(this).children($('.terminal-input')).val().toLowerCase();
   var href;
 
-   if (val === 'beautiful'){
-    showKittens();
+   if (val === '1'){
+    window.open("http://thebestisyettoco.me");
+  }if (val === '2'){
+    window.open("http://700apps.xyz");
   }else {
     resetForm();
   }
@@ -346,7 +348,7 @@ $('.four-oh-four-form').on('submit', function(e){
 
 function resetForm(withKittens){
   var message = "Maybe or maybe not. But the right answer is not this one. Keep Trying. "
-  var input = $('.oneword-input');
+  var input = $('.terminal-input');
 
   if (withKittens){
     $('.kittens').removeClass('kittens');
@@ -387,7 +389,7 @@ function resetForm(withKittens){
 
       $.get('http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=kittens', function(result){
         gif = result.data.image_url;
-        $('.terminal').append('<img class="kitten-gif" src="http://img-storage.qiniudn.com/15-5-4/14880428.jpg"">');
+        $('.terminal').append('<img class="kitten-gif" src="http://img-storage.qiniudn.com/15-5-4/14880428.jpg">');
         resetForm(true);
       });
     }, (lines.length * 100) + 1000);

@@ -28,6 +28,7 @@
 
 <link href="http://cdn.bootcss.com/magnific-popup.js/1.0.0/magnific-popup.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic|Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="http://code.cdn.mozilla.net/fonts/fira.css">
 
@@ -54,8 +55,25 @@
   });
 </script>
 
+  <script>
+              $.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=", function(a) {
+  $("#quote").append(a[0].content + "<p>&mdash; " + a[0].title + "</p>")
+});
+  </script>
+
 
     <script>
+  $(function(){
+      $(".thisis").typed({
+        strings: ["ME", "^1000 SAMMY"],
+        backDelay: 2000,
+        typeSpeed: 200
+      });
+  });
+</script>
+
+
+        <script>
   $(function(){
       $(".thisis").typed({
         strings: ["ME", "^1000 SAMMY"],
@@ -216,7 +234,23 @@
 
     <style type="text/css">
 
-
+.mfp-preloader {
+  color: white;
+  font-weight: 200;
+  letter-spacing: .1em;
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  text-align: center;
+  /* margin-top: -0.8em; */
+  left: 8px;
+  right: 8px;
+  z-index: 1044;
+  padding: 1em;
+  background-color: rgba(255, 65, 54, .8);
+  border-radius: 5px;
+  margin: 0 auto;
+}
 
 
 
