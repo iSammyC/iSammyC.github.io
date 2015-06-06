@@ -49,6 +49,7 @@
   
 }
 
+/*
 #section2 #slide2 {
   background-image: url(http://7xixe7.com1.z0.glb.clouddn.com/15-5-27/70131012.jpg);
   background-size: cover;
@@ -59,7 +60,7 @@
   background-image: url(http://7xixe7.com1.z0.glb.clouddn.com/15-5-26/34297709.jpg);
   background-size: cover;
   background-position: top center;
-}
+}*/
 
 
 
@@ -295,7 +296,6 @@ img.logo-b {
   height: 80vh;
   width: 80vw;
   border-radius: 2px;
-  
 }
 
 .cl {
@@ -489,7 +489,7 @@ text-shadow: 0px -1px 0px #858585;
 /* Styles for dialog window */
 .popup-dic {
   position: relative;
-  background: rgba(254, 244, 144, 1);
+  background: #F7E400;
   color: #A0A0A0;
   padding: 20px;
   width: 300px;
@@ -853,6 +853,7 @@ textarea {
 .single-post h6, {
     color: currentColor ;
     font-style: italic;
+    color: currentColor;
 }
 
 
