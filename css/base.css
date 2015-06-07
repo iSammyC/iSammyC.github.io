@@ -3040,4 +3040,28 @@ ul#pj-list {
 }
 
 
+.one-row {
+  text-align:left;
+  padding-top: 4rem;
+  margin: 0 auto;
+}
 
+
+.column-left {
+  font-size: 2em;
+  font-weight: 200;
+  padding: 1em 0;
+}
+
+.top-line {
+  border-top:1px solid;
+}
+
+li.height {
+    left: 7.3em;
+    top: 14.3em;
+}
+
+li.width {
+    left: 2em;
+}
