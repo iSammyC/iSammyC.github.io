@@ -4,7 +4,9 @@
 
  {% include head-normal.html %}
 
-  <body class="flex flex-column" style="min-height:100vh" >
+  <body>
+
+  <div class="flex flex-column" style="min-height:100vh">
 
     {% include header.html %}
 
@@ -15,6 +17,8 @@
     </div>
 
     {% include footer.html %}
+
+    </div>
     
     
       <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
@@ -26,9 +30,9 @@
       document.body.style.transition = 'background .2s ease-out';
       function toggleTheme() {
         if (dark) {
-          document.body.classList.add('bg-darkmood', 'darkmood-p');
+          document.body.classList.add('bg-dark', 'dark');
         } else {
-          document.body.classList.remove('bg-darkmood', 'darkmood-p');
+          document.body.classList.remove('bg-dark', 'dark');
         }
       }
       if (hour > 20 || hour < 6) {

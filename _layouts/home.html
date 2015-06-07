@@ -6,10 +6,10 @@
 <body>
 
 <div id="top-left"> 
-	<a id="moveTo" href="/" class="t600 px2 cc" alt="sammy.tk">Sammy Cheung</a>
+	<a id="moveTo" href="/" class="t600 px2" alt="sammy.tk">Sammy Cheung</a>
   <br>
-  <div class="p2">
-  <a id="moveTo" href="/" style="color:currentColor;">
+  <div class="p2" id="logo">
+  <a id="moveTo" href="/">
     <svg  width="40px" height="40px" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
         <g sketch:type="MSArtboardGroup" transform="translate(-15.000000, -15.000000)" fill="currentColor">
@@ -24,21 +24,21 @@
 
 
 	<nav>
-  	<ul class="menu list-reset right-align t400 cc">
-  		<li class="inline-block">
-      <a href="/#about" title="about me"><i class="material-icons md-18">info</i></a>
+  	<ul class="menu list-reset right-align t400">
+  		<li class="inline-block p0">
+      <a href="/#about" title="about me">about</a>
       </li>
 
-  		<li class="inline-block">
-      <a href="#projects" title="Make Something"><i class="material-icons md-18">work</i></a>
+  		<li class="inline-block p0">
+      <a href="#projects" title="Make Something">work</a>
   		</li>
 
-  		<li class="inline-block">
-      <a href="/#connect" title="Connect with me"><i class="material-icons md-18">contacts</i></a>
+  		<li class="inline-block p0">
+      <a href="/#connect" title="Connect with me">contact</a>
       </li>
 
-  		<li class="inline-block">
-      <a href="/blog" title="blog"><i class="material-icons md-18">create</i></a>
+  		<li class="inline-block p0">
+      <a href="/blog" title="blog">blog</a>
       </li>
   	</ul>
 	</nav>	
@@ -54,7 +54,7 @@
 {% include section0.html %}
 {% include section1.html %}
 {% include section2.html %}
-{% include section3.html %}
+{% include section3v2.html %}
 {% include section4.html %}
 
 
@@ -298,9 +298,9 @@ $('.open-popup-link').magnificPopup({
   document.body.style.transition = 'background .2s ease-out';
   function toggleTheme() {
     if (dark) {
-      document.body.classList.add('bg-darkmood', 'darkmood-p');
+      document.body.classList.add('bg-dark', 'dark');
     } else {
-      document.body.classList.remove('bg-darkmood', 'darkmood-p');
+      document.body.classList.remove('bg-dark', 'dark');
     }
   }
   if (hour > 18 || hour < 7) {
