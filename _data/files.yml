@@ -1,0 +1,12 @@
+# Downloads
+file-a:
+  link:         'a.zip'
+  md5:          'a55b65c475f3d83888dce9a2b719b763'
+  ver:          '1.0.1'
+  desc:         'I am file a!'
+    
+file-b:
+  link:         'b.zip'
+  md5:          '53954cdcf527c463b856dcea8536aa70'
+  ver:          '0.1'
+  desc:         'I am not file a!'

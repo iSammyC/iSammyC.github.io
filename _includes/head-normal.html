@@ -1,57 +1,48 @@
 <head>
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <link rel="stylesheet" href="{{ "/css/base.css" | prepend: site.baseurl }}">
+
+  <link rel="stylesheet" href="/css/base.css">
+
+
+
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 	
 
-
-
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
 	<link href="http://7xixe7.com1.z0.glb.clouddn.com/15-5-31/8616128-Favicon.ico" rel="icon">
 
-	<link href='http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic|Oxygen:400,300,700' rel='stylesheet' type='text/css'>
-<link href="http://cdn.bootcss.com/magnific-popup.js/1.0.0/magnific-popup.css" rel="stylesheet">
+  
   <link rel="stylesheet" href="http://code.cdn.mozilla.net/fonts/fira.css">
+	<link href='http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href="http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
-	<link href="http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link href="http://cdn.bootcss.com/magnific-popup.js/1.0.0/magnific-popup.css" rel="stylesheet">
+
+
+	
 
  
-     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script src="http://cdn.bootcss.com/magnific-popup.js/1.0.0/jquery.magnific-popup.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <script src="http://cdn.bootcss.com/magnific-popup.js/1.0.0/jquery.magnific-popup.js"></script>
   <script src="http://cdn.bootcss.com/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
 
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=sammycheung" async="async"></script>
-
-<style type="text/css">
-      
-      .mfp-close-btn-in .mfp-close {
-         color: inherit;
-      }
+  <script src="/scripts/fitter-hsppirt-text.js"></script>
+  <script src="/scripts/sammy.js"></script>
+  
 
 
-      .mfp-bg {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1042;
-  overflow: hidden;
-  position: fixed;
-  background: rgba(0, 0, 0, 0.85);
-  opacity: 0.8;
-
-
-    </style>
 
 
 </head>
