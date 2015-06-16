@@ -4,13 +4,13 @@
 
  {% include head-normal.html %}
 
-  <body>
+  <body style="max-width:1024px">
 
   <div class="flex flex-column" style="min-height:100vh">
 
     {% include header.html %}
 
-    <div class="page-content flex-auto">
+    <div class="page-content flex-auto" style="margin-top:20vh;">
       
         {{ content }}
       
@@ -20,37 +20,7 @@
 
     </div>
     
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
 
-      <script>
-      var hour = moment().hour();
-      var skull = document.querySelector('.js-skull');
-      var dark = false;
-      document.body.style.transition = 'background .2s ease-out';
-      function toggleTheme() {
-        if (dark) {
-          document.body.classList.add('bg-dark', 'dark');
-        } else {
-          document.body.classList.remove('bg-dark', 'dark');
-        }
-      }
-      if (hour > 20 || hour < 6) {
-        dark = true;
-        toggleTheme();
-      }
-      skull.addEventListener('click', function() {
-        dark = !dark;
-        toggleTheme();
-      });
-      </script>
-
-          <script>
-    $('#openSubMenu').click(function(e) {
-    $('.sub-menu').addClass("block");
-    e.preventDefault();
-});
-</script>
 
 
   </body>

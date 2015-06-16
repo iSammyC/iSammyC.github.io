@@ -1,14 +1,6 @@
-#section0 .content{
-  background-image: url(http://is.gd/4MDLfl);
-  background-size: cover;
-  background-position: left center;
-}
 
-#section0 .content-r{
-  background-image: url(http://is.gd/xylxIE);
-  background-size: cover;
-  background-position: bottom right;
-} 
+
+
 
 
 #section1 #slide1 .content-c {
@@ -90,11 +82,14 @@
   min-height: 100%;
 }
 
+ul.menu li::after {
+  content: "//"
+}
 
 
-.menu > li {
-  padding: 0;
-  position: relative;
+ul.menu  li {
+  padding-left: 3px;
+  padding-right: 5px;
 }
 
  .wrapper {
@@ -200,8 +195,8 @@ span {
 /* Styles for dialog window */
 .popup-dic {
   position: relative;
-  background: #Fed331;
-  
+  background: #9B9B9B;
+  color: #F4F4F4;
   padding: 20px;
   width: 300px;
   height: 300px;
@@ -213,6 +208,8 @@ span {
 -moz-box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.27);
 box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.27);
 }
+
+
 
 .popup-dic h1 {
   font-size: 2.2em;
@@ -243,7 +240,10 @@ box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.27);
 }
 
 
-
+popup-dic a {
+  color: #6ED3FA;
+  font-weight: 400;
+}
 
 /* the terminal windows and its effects */
 
@@ -521,15 +521,6 @@ a:active {
 .t800 {font-weight: 800;}
 .t900 {font-weight: 900;}
 
-
-.oxygen {font-family: Oxygen}
-.asap {font-family: Asap;}
-.fira {Font-family: "Fira Sans";}
-.firam {font-family: "Fira Mono"}
-.handwrite {font-family: 'Rock Salt', cursive;}
-
-
-
 .l9 {
         -webkit-transform: rotate(-9deg);
   -ms-transform: rotate(-9deg);
@@ -589,7 +580,7 @@ a:active {
 
 
 #top-left {
-  top: 20px;
+  top: 40px;
   left: 20px;
 }
 
@@ -752,10 +743,18 @@ box-shadow:inset 0px 0px 2px 2px rgba(0,0,0,0.08);
 
 /* NAV for both HOME and PAGE */
 
-nav {
+.top-right {
   position: fixed;
   top: 20px;
-  right: 20px;
+  right:20px;
+  text-align: right;
+  z-index: 1;
+}
+
+nav {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
   text-align: right;
   z-index: 1;
 }

@@ -4,7 +4,9 @@
  * Basscss theme
  *
  */
-
+html {
+  font-size: 13px;
+}
 
 body, button { margin: 0 }
 
@@ -163,14 +165,14 @@ td { vertical-align: top }
 /* Basscss Base Typography */
 
 body {
-  font-family: 'Fira Sans', Helvetica, sans-serif;
+  font-family: 'Clear Sans', Helvetica, sans-serif;
   line-height: 1.5;
   font-size: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Fira Mono', Georgia, serif;
-  font-weight: bold;
+  font-family: 'Clear Sans Medium', Georgia, serif;
+  font-weight: 600;
   line-height: 1.25;
   margin-top: 1em;
   margin-bottom: .5em;
@@ -184,10 +186,19 @@ p, dl, ol, ul {
   margin-bottom: 1rem;
 }
 
-pre, code, samp {
+pre, code {
   font-family: 'Source Code Pro', Consolas, monospace;
   font-size: inherit;
 }
+
+samp {
+  font-family: "Clear Sans";
+  font-size: 1rem;
+  font-style: italic;
+  color: #aaa ;
+  padding: 0 0 0 20px ;
+}
+
 
 pre {
   margin-top: 0;
@@ -216,9 +227,9 @@ blockquote {
 }
   blockquote,
   blockquote p {
-    font-size: 24px;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-style: italic;
+    color: #aaa;
   }
 
 h1, .h1 { font-size: 36px; font-size: 2.25rem }
@@ -231,6 +242,11 @@ h6, .h6 { font-size: 14px; font-size: .875rem }
 .list-reset {
   list-style: none;
   padding-left: 0;
+}
+
+aside, .aside {
+  font-family: "Clear Sans Thin";
+  font-size:0.7rem;
 }
 
 /* Basscss Utility Layout */
@@ -1164,9 +1180,13 @@ input[type=range] {
 /* Opacity */
 .muted { opacity: .5 }
 
+.thin     { font-family: 'Clear Sans Thin'}
+.regular  { font-family: 'Clear Sans Regular'}
+.medium   { font-family: 'Clear Sans Medium' }
 
-.serif { font-family: 'Merriweather', Georgia, serif }
-.sans  { font-family: 'Roboto', Helvetica, sans-serif }
+
+.serif { font-family:  Georgia, serif }
+.sans  { font-family:  Helvetica, sans-serif }
 
 .fuchsia a:not(.button) { color: #f012be }
 .maroon a:not(.button) { color: #85144b }
