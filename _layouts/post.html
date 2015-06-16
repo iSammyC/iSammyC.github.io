@@ -2,16 +2,16 @@
 layout: default
 ---
 
-<div class="py4 mb4">
+<div class="p2">
 <div class="article-container px1">
-  <div id="single-post-header" class="flex flex-baseline mb3" style="border-bottom: 1px dotted #ff851b">
-  	<div class="flex-auto px1">
+  <div id="single-post-header" class="center py3" style="border-bottom: 1px dotted #ff851b">
+  	
     <h1 class="post-title">{{ page.title }}</h1>
-    </div>
+    
     <div class="px1">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %} </div>
   </div>
 
-  <div id="single-post-content" class="">
+  <div id="single-post-content" class="justify py3 px2">
     {{ content }}
   </div>
 
