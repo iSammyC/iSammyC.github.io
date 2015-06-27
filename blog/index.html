@@ -1,15 +1,40 @@
 ---
 layout: default
 ---
+<div class="wrapper mx-auto p2 flex">
+<div class="col-4 p2 animated fadeInLeft" id="left-column">
+       <h1 class="fs14 t300 m0">blog</h1>
+</div>
 
-<div class="blog">
-<section class="py4 px2" style="max-width:700px;">
-
-  
-        <h1 class="post-title px2 red">b l o g</h1>      
-        <ul class="post-list list-reset px2">
+<div class="col-8 fs14 t200 p2 animated fadeInRight" id="right-column">
+    <ul class="post-list list-reset">
             {% for post in site.posts %}
-        <li class="py4">
+        <li class="">
+         <div class="justify">
+          <span id="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <h2 class="h3 mt0" title="{{ post.excerpt }}">
+            <a href="{{ post.url | prepend: site.baseurl }}">
+            {{ post.title }}
+             </a>
+          </h2>
+          {{ post.excerpt }}
+         </div> 
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+</div>
+
+
+<!--
+<div class="blog px2 py4 mx-auto" style="max-width:1024px;">
+<div class="flex flex-start">
+
+<div class="flex-none p2 mx-auto  " style="width:700px;">
+        <h1 class="post-title px2 red  ">b l o g</h1>      
+        <ul class="post-list list-reset px2  ">
+            {% for post in site.posts %}
+        <li class="py4  ">
          <div>
           <span id="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
           <h2 class="h3" style="margin-top:0;" title="{{ post.excerpt }}">
@@ -22,13 +47,15 @@ layout: default
       </li>
     {% endfor %}
   </ul>
-      
-      
+</div>  
+    <div class="flex-none" style="width:20px"></div>
   
-    <!--
-    <div class="sm-col sm-col-4 md-col-3 sm-show right-align px2 py3">
-      <h3 class="h3">Categories</h3>
-      <ul class="list-reset ">
+
+    <div class="flex-auto p2" style="border-left:1px dotted rgba(0,0,0,.2)" >
+
+  
+      <h5 class=" red">Categories</h5>
+      <ul class="list-reset orange thin" style="font-size:10px;">
         <li><a href="#">Bacon</a></li>
         <li><a href="#">Bratwurst</a></li>
         <li><a href="#">Andouille</a></li>
@@ -36,10 +63,12 @@ layout: default
         <li><a href="#">Corned Beef</a></li>
         <li><a href="#">Pastrami</a></li>
       </ul>
+
       </div> -->
+
      
 
-</section>
+
 
 <!--
 <div class="rss px2 py2" style="max-width:700px;">
@@ -51,6 +80,6 @@ layout: default
 
 </div> -->
 
-
+</div>
 </div>
 

@@ -1,0 +1,20 @@
+.thin     { font-family: 'Clear Sans Thin'}
+.regular  { font-family: 'Clear Sans'}
+.medium   { font-family: 'Clear Sans Medium' }
+
+.newwhite  { color: #D1D7E0;}
+.newyellow { color: #F6B800;}
+.newblue   { color: #4E75F8;}
+.newaqua   { color: #5CC4CF;}
+.newpink   { color: #DF2C6F;} 
+.newgreen  { color: #37F0A6;}
+.newpurple { color: #2D283D;}
+
+.bg-newpurple { background-color: #2D283D;}
+.bg-newaqua { background-color: #5CC4CF;}
+.bg-newyellow { background-color: rgba(246, 184, 0, .9);}
+.bg-newgreen { background-color: #37F0A6;}
+.bg-newpink  { background-color: #DF2C6F;}
+.bg-newwhite { background-color: #D1D7E0;}
+.bg-newwhite-70 { background-color: rgba(209, 215, 224, .7)}
+

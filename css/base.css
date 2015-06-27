@@ -18,7 +18,40 @@ button, input, select, textarea {
   font-size: 100%;
 }
 
+a {
+  text-decoration: none;
+}
 
+a:hover {
+  opacity: 0.66;
+}
+
+.t100 {font-weight: 100;}
+.t200 {font-weight: 200;}
+.t300 {font-weight: 300;}
+.t400 {font-weight: 400;}
+.t500 {font-weight: 500;}
+.t600 {font-weight: 600;}
+.t700 {font-weight: 700;}
+.t800 {font-weight: 800;}
+.t900 {font-weight: 900;}
+
+.fs10, .fs10 p { font-size: 10px; }
+.fs12, .fs12 p { font-size: 12px; }
+.fs14, .fs14 p { font-size: 14px; }
+.fs16, .fs16 p { font-size: 16px; }
+.fs18, .fs18 p { font-size: 18px; }
+.fs20, .fs20 p { font-size: 20px; }
+.fs22, .fs22 p { font-size: 22px; }
+.fs24, .fs24 p { font-size: 24px; }
+.fs26, .fs26 p { font-size: 26px; }
+.fs28, .fs28 p { font-size: 28px; }
+.fs30, .fs30 p { font-size: 30px; }
+
+.tlg,  .tlg p  { font-size: 1.3rem; }
+.t2em, .t2em p { font-size: 2rem;   }
+.t3em, .t3em p { font-size: 3rem;   }
+.t4em, .t4em p { font-size: 4rem;   }
 
 p {
   font-weight: 300;
@@ -240,6 +273,8 @@ body {
   font-family: 'Fira Sans', 'Asap', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 100%;
 }
+
+
 
 
 

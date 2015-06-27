@@ -1,23 +1,60 @@
 ---
-layout: home
+layout: default
 ---
 
-<div class="home">
+<div class="col-11 mx-auto p2" style="max-width:1024px">
+<div class="col-12 flex flex-wrap">
+  <div class="lg-col-8 col-12   py2 flex flex-center" style="height:40vh;">
+    <div class="fs22 t300">
+	<p class="mb1">I'm Sammy Cheung. Recently, I started to build some <a href="/">websites</a> and <a href="/">draw something</a>. Not a pro, much to learn. </p>
 
+	</div>
+  </div>  
+</div>
+	
+
+
+<div class="col-12 flex flex-wrap mb4"style="height:25vh;">
+    <ul class="connect">
+    	<li class="mr3"><a href="http://weibo.com/moohey" class="wb"> <i class="fa fa-weibo"></i> </a></li>
+		<li class="mr3"><a href="https://www.facebook.com/isammycheung" class="fb"> <i class="fa fa-facebook"></i> </a></li>
+		<li class="mr3"><a href="https://twitter.com/Sammycheung" class="twi"> <i class="fa fa-twitter"></i> </a></li>
+		<li class="mr3"><a href="https://instagram.com/sammyc/" class="ins"> <i class="fa fa-instagram"></i> </a></li>
+		<li class="mr1"><a href="mailto:sammycheung@me.com" class="mail"> <i class="fa fa-envelope"></i> </a></li>
+	</ul>
+</div>  
   
 
-  <ul class="post-list list-reset py4 px2">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta red bg-navy p1">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link teal bg-navy p2 asap" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+<div class="sm-flex flex-wrap mxn2 ">
+    <div class="sm-col-12 lg-col-4 md-col-12 p1 animated fadeInUp" id="cards">
+    <div class="p2 bg-white hvr-card rounded">
+    <img src="http://is.gd/4WpGtV" class="mb2 md-show" />
+    <h1 class="h4 mt0 t500"><a href="//9con.ml">9con</a></h1>
+    <p class="mb0 fs12">An iconset for OS X.</p>
+    </div>
+    </div>
 
-  
+    <div class="sm-col-12 lg-col-4 md-col-12 p1 animated fadeInUp" id="cards">
+    <div class="p2 bg-white hvr-card rounded">
+    <img src="http://7xixe7.com1.z0.glb.clouddn.com/15-6-27/73070105.jpg" class="mb2 md-show" />
+    <h1 class="h4 mt0 t500"><a href="//700apps.xyz">700apps</a></h1>
+    <p class="mb0 fs12">My iOS app list. Black & White.</p>
+    </div>
+    </div>
+
+    <div class="sm-col-12 lg-col-4 md-col-12 p1 animated fadeInUp" id="cards">
+    <div class="p2 bg-white hvr-card rounded">
+    <img src="http://7xixe7.com1.z0.glb.clouddn.com/15-6-27/56941454.jpg" class="mb2 md-show" />
+    <h1 class="h4 mt0 t500"><a href="/design">thebestisyettocome</a></h1>
+    <p class="mb0 fs12">A contopop magazine.</p>
+    </div>
+    </div>
+</div>
+
+
+
+
 
 </div>
+
