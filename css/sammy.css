@@ -3,9 +3,30 @@ section,
     padding: 1em;
 }
 
+strong {
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
+  color: #80D8FF;
+}
+
+mark {
+  background-color: #B3E5FC;
+  color: #3D3D3D;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+ul.post-list li:nth-child(odd) {
+  background-color:  rgba(0,0,0,.0625);
+}
 
 ul.footer-nav {
-  margin-top: 3em;
+  margin-top: 1em;
   margin-bottom: 1em;
 }
 
@@ -14,10 +35,11 @@ ul.footer-nav li {
   margin-right: 20px;
 }
 
+
+
 ul.footer-nav li a {
-  color: #9B9B9B;
-  font-size: 13px;
-  font-weight: 300;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 ul.connect li {
@@ -45,7 +67,7 @@ a.ins:hover {
 }
 
 a.mail:hover {
-  color: #FED331;
+  color: #81D4FA;
 }
 
 
@@ -76,7 +98,6 @@ a.mail:hover {
 .bestyet {
   background-image: url(http://7xixe7.com1.z0.glb.clouddn.com/15-6-16/27726011.jpg);
   background-position: center;
-  background
 }
 
 .apps700 {
@@ -713,15 +734,15 @@ border-radius: 5px;
 
 .bg-light, .bg-white {background: #F8F8F8;}
 .light-p, .light  { color: #838383;}
-.light-hl,  { color: #202223;}
-.light-sub, { color: #B4B4B4;}
+.light-hl  { color: #202223;}
+.light-sub { color: #B4B4B4;}
 
 
 
 .bg-dark, .bg-black {background-color: #202223;}
 .dark, .dark-p { color: #9A9A9A;}
-.dark-hl, {color: #FDFDFD;}
-.dark-sub, { color: #525353;}
+.dark-hl {color: #FDFDFD;}
+.dark-sub { color: #525353;}
 
 .resume-wrapper {
   width: 750px;
@@ -986,7 +1007,7 @@ nav a.current {
   }
 }
 
-.hvr-hang, {
+.hvr-hang {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -1245,13 +1266,57 @@ li.width {
     left: 2em;
 }
 
+#proud {
+        animation:color 15s linear infinite;
+        -moz-animation:color 15s linear infinite; /* Firefox */
+        -webkit-animation:color 15s linear infinite; /* Safari and Chrome */
+        -o-animation:color 15s linear infinite; /* Opera */
+      }
+@keyframes color{
+        0%,100% {color:#ff0000}
+        16% {color:#f39c12}
+        33% {color:#f0dc3f}
+        50% {color:#119a60}
+        66% {color:#2730b3}
+        83% {color:#a627da}
+      }
 
+      @-moz-keyframes color /* Firefox */
+      {
+        0%,100% {color:#ff0000}
+        16% {color:#f39c12}
+        33% {color:#f0dc3f}
+        50% {color:#119a60}
+        66% {color:#2730b3}
+        83% {color:#a627da}
+      }
+
+      @-webkit-keyframes color /* Safari and Chrome */
+      {
+        0%,100% {color:#ff0000}
+        16% {color:#f39c12}
+        33% {color:#f0dc3f}
+        50% {color:#119a60}
+        66% {color:#2730b3}
+        83% {color:#a627da}
+      }
+
+      @-o-keyframes myfirst /* Opera */
+      {
+        0%,100% {color:#ff0000}
+        16% {color:#f39c12}
+        33% {color:#f0dc3f}
+        50% {color:#119a60}
+        66% {color:#2730b3}
+        83% {color:#a627da}
+      }
 
 
 
 
 .hvr-shadow,
-.hvr-card {
+.hvr-card,
+.the-card {
   vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);

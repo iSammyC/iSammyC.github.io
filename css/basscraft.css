@@ -790,12 +790,11 @@ body {
 }
 
 a {
-  color: #ff4136 ;
+  color: #0288D1 ;
   text-decoration: none;
 }
 
 a:hover {
-  
   opacity: .7;
   text-decoration: none;
 }
@@ -1159,7 +1158,7 @@ input[type=range] {
   border-left-color: inherit;
 }
 
-.rounded { border-radius: 1px }
+.rounded { border-radius: 3px }
 .circle  { border-radius: 50% }
 
 .rounded-top    { border-radius: 3px 3px 0 0 }

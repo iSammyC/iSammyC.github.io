@@ -1,6 +1,36 @@
 ---
 layout: default
 ---
+<div class="col-11 mx-auto p2" style="max-width:1024px">
+<div class="col-12 flex flex-wrap">
+  <div class="lg-col-7 col-12 py2 flex flex-center" style="height:40vh;">
+    <div class="fs22">
+  <p class="mb1 center"><h1>blog</h1></p>
+
+  </div>
+  </div>  
+</div>
+
+
+<div class="lg-col-6 col-12 flex flex-wrap">
+<ul class="post-list list-reset">
+            {% for post in site.posts %}
+        <li class="">
+         <div class="justify">
+          <span id="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <h2 class="h3 mt0" title="{{ post.excerpt }}">
+            <a href="{{ post.url | prepend: site.baseurl }}">
+            {{ post.title }}
+             </a>
+          </h2>
+          {{ post.excerpt }}
+         </div> 
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+</div>
+<!--
 <div class="wrapper mx-auto p2 flex">
 <div class="col-4 p2 animated fadeInLeft" id="left-column">
        <h1 class="fs14 t300 m0">blog</h1>
@@ -23,7 +53,7 @@ layout: default
     {% endfor %}
   </ul>
 </div>
-</div>
+</div>-->
 
 
 <!--

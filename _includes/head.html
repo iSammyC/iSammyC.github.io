@@ -4,9 +4,15 @@
 	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" >
 
+	<base target="_new" />
+
+    <link rel="icon" href="http://is.gd/ZJoYRJ">
+    <link rel="apple-touch-icon-precomposed" href="http://is.gd/42mrFI">
+
 	<link rel="stylesheet" href="/css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="/css/basscraft.css">
     <link rel="stylesheet" href="/css/sammy.css">
+    <link rel="stylesheet" href="/css/jquery.stickyalert.css">
 
 	<link rel="stylesheet" href="http://code.cdn.mozilla.net/fonts/fira.css">
     <link href="//cdn.bootcss.com/animate.css/3.3.0/animate.css" rel="stylesheet">
@@ -14,5 +20,24 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="//cdn.bootcss.com/moment.js/2.10.3/moment.js"></script>
+    <script src="/js/jquery.stickyalert.js"></script>
+
+    <script>
+    	$(document).ready(function() {
+  $('#alert-container').stickyalert({
+    barFontColor:'#eee',
+    barColor:'#222',
+    barText:'Love Wins',
+    barTextLink:'http://longren.io/work-with-me/',
+    cookieRememberDays: '2'
+  });
+});
+    </script>
+
+    <script type="text/javascript">
+$(document).ready(function () {
+  $('#pinboard').rssfeed('https://api.pinboard.in/v1/posts/all?auth_token=sammyc:37F64E7CD8A8E4C5ADE7')
+});
+</script>
 
 </head>
