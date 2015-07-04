@@ -157,7 +157,18 @@ h6, .h6 { font-size: 14px; font-size: .875rem  }
 .fs26, .fs26 p { font-size: 26px; }
 .fs28, .fs28 p { font-size: 28px; }
 .fs30, .fs30 p { font-size: 30px; }
+.fs40, .fs40 p { font-size: 40px; }
+.fs36, .fs36 p { font-size: 36px; }
+.fs45, .fs45 p { font-size: 45px; }
+.fs50, .fs50 p { font-size: 50px; }
+.fs30, .fs30 p { font-size: 30px; }
+.fs30, .fs30 p { font-size: 30px; }
+.fs30, .fs30 p { font-size: 30px; }
+.fs30, .fs30 p { font-size: 30px; }
+.fs30, .fs30 p { font-size: 30px; }
 
+.lh1 { line-height: 1rem }
+.lh2 { line-height: 2rem }
 :root {
 
   /* Cool */
@@ -795,7 +806,7 @@ a {
 }
 
 a:hover {
-  opacity: .7;
+  opacity: .8;
   text-decoration: none;
 }
 
@@ -1170,124 +1181,66 @@ input[type=range] {
 /* Basscss Colors */
 
 
-/* Color */
 
-.black, .dark-gray   { color: #111 }
-.gray, .mid-gray     { color: #aaa }
-.silver, .light-gray { color: #ddd }
-.white { color: #fff }
+.black, .dark-gray   { color: #202223 }
+.gray, .mid-gray     { color: #BFBFBF }
+.silver, .light-gray { color: #EBEBEB }
+.white { color: #fdfdfd }
 
-.aqua  { color: #7fdbff }
-.blue  { color: #0074d9 }
-.navy  { color: #001f3f }
-.teal  { color: #39cccc }
-.green { color: #2ecc40 }
-.olive { color: #3d9970 }
-.lime  { color: #01ff70 }
-
-.yellow  { color: #ffdc00 }
-.orange  { color: #ff851b }
-.red     { color: #ff4136 }
-.fuchsia { color: #f012be }
-.purple  { color: #b10dc9 }
-.maroon  { color: #85144b }
+.aqua  { color: #5fc9f8 }
+.blue  { color: #147efb }
+.navy  { color: #08538c  }
+.green { color: #53d769 }
+.pink  { color: #fc3158 }
+.yellow  { color: #fecb2e }
+.orange  { color: #fd9426 }
+.red     { color: #fc3d39 }
 
 
-/* Background Color */
+.bg-black, .bg-dark-gray   { background-color: #202223 }
+.bg-gray, .bg-mid-gray     { background-color: #BFBFBF }
+.bg-silver, .bg-light-gray { background-color: #EBEBEB }
+.bg-white  { background-color: #fdfdfd }
 
-.bg-black, .bg-dark-gray   { background-color: #111 }
-.bg-gray, .bg-mid-gray     { background-color: #aaa }
-.bg-silver, .bg-light-gray { background-color: #ddd }
-.bg-white  { background-color: #fff }
+.bg-aqua  { background-color: #5fc9f8 }
+.bg-blue  { background-color: #147efb }
+.bg-navy  { background-color: #08538c }
+.bg-green { background-color: #53d769 }
+.bg-pink  { background-color: #fc3158 }
+.bg-yellow  { background-color: #fecb2e }
+.bg-orange  { background-color: #fd9426 }
+.bg-red     { background-color: #fc3d39 }
 
-.bg-aqua  { background-color: #7fdbff }
-.bg-blue  { background-color: #0074d9 }
-.bg-navy  { background-color: #001f3f }
-.bg-teal  { background-color: #39cccc }
-.bg-green { background-color: #2ecc40 }
-.bg-olive { background-color: #3d9970 }
-.bg-lime  { background-color: #01ff70 }
-
-.bg-yellow  { background-color: #ffdc00 }
-.bg-orange  { background-color: #ff851b }
-.bg-red     { background-color: #ff4136 }
-.bg-fuchsia { background-color: #f012be }
-.bg-purple  { background-color: #b10dc9 }
-.bg-maroon  { background-color: #85144b }
 
 .bg-darken-1 { background-color: rgba(0,0,0,.0625) }
 .bg-darken-2 { background-color: rgba(0,0,0,.125) }
 .bg-darken-3 { background-color: rgba(0,0,0,.25) }
 .bg-darken-4 { background-color: rgba(0,0,0,.5) }
 
-
-/* Border Color */
-
-.border-aqua  { border-color: #7fdbff }
-.border-blue  { border-color: #0074d9 }
-.border-navy  { border-color: #001f3f }
-.border-teal  { border-color: #39cccc }
-.border-green { border-color: #2ecc40 }
-.border-olive { border-color: #3d9970 }
-.border-lime  { border-color: #01ff70 }
-
-.border-yellow  { border-color: #ffdc00 }
-.border-orange  { border-color: #ff851b }
-.border-red     { border-color: #ff4136 }
-.border-fuchsia { border-color: #f012be }
-.border-purple  { border-color: #b10dc9 }
-.border-maroon  { border-color: #85144b }
-
-.border-black  { border-color: #111 }
-.border-gray   { border-color: #aaa }
-.border-silver { border-color: #ddd }
-.border-white  { border-color: #fff }
+.border-aqua  { border-color: #5fc9f8 }
+.border-blue  { border-color: #147efb }
+.border-navy  { border-color: #08538c }
+.border-green { border-color: #53d769 }
+.border-pink  { border-color: #fc3158 }
+.border-yellow  { border-color: #fecb2e }
+.border-orange  { border-color: #fd9426 }
+.border-red     { border-color: #fc3d39 }
+.border-pink  { border-color: #fc3158 }
+.border-black  { border-color: #202223 }
+.border-gray   { border-color: #BFBFBF }
+.border-silver { border-color: #EBEBEB }
+.border-white  { border-color: #fdfdfd }
 
 .border-darken-1 { border-color: rgba(0,0,0,.0625) }
 .border-darken-2 { border-color: rgba(0,0,0,.125) }
 .border-darken-3 { border-color: rgba(0,0,0,.25) }
 .border-darken-4 { border-color: rgba(0,0,0,.5) }
-
-/* Opacity */
 .muted { opacity: .5 }
 
 
 
 
-.serif { font-family:  Georgia, serif }
-.sans  { font-family:  Helvetica, sans-serif }
 
-.fuchsia a:not(.button) { color: #f012be }
-.maroon a:not(.button) { color: #85144b }
-.blue a:not(.button) { color: #0074d9 }
-.navy a:not(.button) { color: #001f3f }
-.aqua a:not(.button) { color: #7fdbff }
-.green a:not(.button) { color: #2ecc40 }
-.olive a:not(.button) { color: #3d9970 }
-.lime a:not(.button) { color: #01ff70 }
-.teal a:not(.button) { color: #39cccc }
-.yellow a:not(.button) { color: #ffdc00 }
-.orange a:not(.button) { color: #ff851b }
-.red a:not(.button) { color: #ff4136 }
-.purple a:not(.button) { color: #b10dc9 }
-.black a:not(.button) { color: #111 }
-.gray a:not(.button) { color: #aaa }
-
-.fuchsia .button:not(.button-outline):not(.button-transparent) { background-color: #f012be }
-.maroon .button:not(.button-outline):not(.button-transparent) { background-color: #85144b }
-.blue .button:not(.button-outline):not(.button-transparent) { background-color: #0074d9 }
-.navy .button:not(.button-outline):not(.button-transparent) { background-color: #001f3f }
-.aqua .button:not(.button-outline):not(.button-transparent) { background-color: #7fdbff }
-.green .button:not(.button-outline):not(.button-transparent) { background-color: #2ecc40 }
-.olive .button:not(.button-outline):not(.button-transparent) { background-color: #3d9970 }
-.lime .button:not(.button-outline):not(.button-transparent) { background-color: #01ff70 }
-.teal .button:not(.button-outline):not(.button-transparent) { background-color: #39cccc }
-.yellow .button:not(.button-outline):not(.button-transparent) { background-color: #ffdc00 }
-.orange .button:not(.button-outline):not(.button-transparent) { background-color: #ff851b }
-.red .button:not(.button-outline):not(.button-transparent) { background-color: #ff4136 }
-.purple .button:not(.button-outline):not(.button-transparent) { background-color: #b10dc9 }
-.black .button:not(.button-outline):not(.button-transparent) { background-color: #111 }
-.gray .button:not(.button-outline):not(.button-transparent) { background-color: #aaa }
 
 
 /* Needs supporting variables */

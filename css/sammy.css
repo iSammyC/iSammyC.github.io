@@ -9,12 +9,12 @@ strong {
 
 em {
   font-style: italic;
-  color: #80D8FF;
+  color: #fecb2e;
 }
 
 mark {
-  background-color: #B3E5FC;
-  color: #3D3D3D;
+  background-color: #C82563;
+  color: currentColor;
 }
 
 .underline {
@@ -83,25 +83,20 @@ a.mail:hover {
   background-size: cover;
 }
 
-.ninecon {
-  background-image: url(http://7xixe7.com1.z0.glb.clouddn.com/15-6-7/7917426.jpg);
+#ninecon {
+  background-image: url(http://is.gd/4WpGtV);
   background-position: center;
   background-size: cover;
 }
 
-.sheila {
-  background-image: url(http://img-storage.qiniudn.com/15-5-4/14880428.jpg);
+#bestyet {
+  background-image: url(http://is.gd/Q2AYWs);
   background-position: center;
   background-size: cover;
 }
 
-.bestyet {
-  background-image: url(http://7xixe7.com1.z0.glb.clouddn.com/15-6-16/27726011.jpg);
-  background-position: center;
-}
-
-.apps700 {
-  background-image: url(http://7xixe7.com1.z0.glb.clouddn.com/15-6-13/39189752.jpg);
+#apps700 {
+  background-image: url(http://is.gd/emStG9);
   background-position: center;
   background-size: cover;
 }
@@ -1321,7 +1316,7 @@ li.width {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: rgba(0,0,0,.3) 0 1px 3px;
-  border-radius: 1px;
+  border-radius: 3px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
